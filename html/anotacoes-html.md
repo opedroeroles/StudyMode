@@ -1,2 +1,5 @@
-# StudyMode
-Repositório criado para facilitar o estudo do desenvolvimento web e de software
+# HTML
+## Características
+- Linguagem de marcação;
+- Esqueleto do desenvolvimento web;
+
