@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Links</title>
+    </head>
+
+    <body>
+        <!--
+            Links em HTMl são hyperlinks, que servem como meio de localização dentre arquivos desse formato.
+            Um link não precisa ser um texto, pode ser incorporado em qualquer elemento HTML.
+        -->
+
+        <h1>sintaxe - a + atributo href (link) + texto do link</h1>
+        <a href="https://roadmap.sh">Site bem legal</a>
+
+        <h1>link com atributo target</h1>
+        <a href="https://roadmap.sh" target="_self">Site bem legal</a> abrindo na mesma aba - target="_self"<br>
+        <a href="https://roadmap.sh" target="_blank">Site bem legal</a> abrindo em nova aba - target="_blank"<br>
+        <a href="https://roadmap.sh" target="_parent">Site bem legal</a> abrindo em parent frame - target="_parent"<br>
+        <a href="https://roadmap.sh" target="_top">Site bem legal</a> abrindo no topo da janela - target="_top"
+
+        <h1>imagem com link</h1>
+        <a href=https://roadmap.sh>
+            <img src="imagem.png">
+        </a>
+
+        <h1>botão com link</h1>
+        <button onclick="document.location='https://roadmap.sh'">Site bem legal</button> - adição de códigos JavaScript (document.location='link do site')
+    </body>
+</html>
