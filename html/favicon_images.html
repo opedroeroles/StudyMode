@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Favicon e Imagens</title>
+    </head>
+
+    <body>
+        <!--
+            img - adiciona imagens à página 
+        -->
+        
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo W3Schools" style="height:500px;width:500px;"><br><br><br>
+            <!-- Ou atributos height e width -->
+
+        <!--
+            Image Map - define uma imagem com áreas clicáveis, utilizando a tag <map> e o atributo usemap na tag img
+                usemap - atributo de identificação para a tag map (deve ser usado com # antes do valor)
+                <map> - cria um mapa de imagem, sendo ligado à uma imagem pelo atributo anterior (usemap="nome")
+                    <area> - define uma área do mapa e sua propriedade (uma parte da imagem)
+                        shape - atributo que define a forma, podendo ser rect (retangular), circle (circular), poly (poligonal) ou default (toda a imagem)
+                        coord - atributo que define as coordenadas da área, sendo a ordem: distância da borda esquerda, distância da borda de cima
+        -->
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/2175px-W3Schools_logo.svg.png" alt="Logo W3Schools" style="height:500px;width:500px;" usemap="#mapa">
+
+        <map name="mapa">
+            <area shape="circle" coords="250,250,50" href="https://www.w3schools.com/">
+        </map>
+
+        <!--
+            <picture> - tag que contém um mais elementos <source>, que permitem a adequação de arquivos de imagem em mais dispositivos.
+                <source> - especifica múltiplos recursos de mídia
+                    media - atributo que define o tamanho mínimo de exibição de um elemento
+                    srcset - atributo que define o caminho do arquivo (semelhante ao src)
+        -->
+
+        <picture>
+            <source media="(min-width: 600px)" srcset="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+            <source media="(min-width 400px)" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/2175px-W3Schools_logo.svg.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo Github" style="width:400px;height:400px">
+        </picture>
+    </body>
+</html>
